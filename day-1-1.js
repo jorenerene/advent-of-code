@@ -6,5 +6,5 @@ for (var x = 0; x < string.length; x ++) {
 	if (string [x] == "(") floor ++;
 	else floor --;
 
-	console.log (floor);
+	console.log (floor); // 138
 }

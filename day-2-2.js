@@ -1,3 +1,4 @@
+var input = document.getElementsByTagName ("pre") [0].textContent.split ("\n");
 var total = 0;
 
 for (var x = 0; x < input.length; x ++) {

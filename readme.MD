@@ -4,6 +4,10 @@ Thousands of programmers are undertaking the inaugural [Advent of Code](http://a
 
 My midnight workflow solely requires a browser to refresh the new day's puzzle page (http://adventofcode.com/day/#) and write JavaScript in the developer console.
 
+## Demo
+
+[![Advent of Code Solution Demo](http://i.imgur.com/jbKuUIO.gif "Advent of Code Solution Demo")](https://youtu.be/NdhpbGZIrVk)
+
 ## Notes
 
 - **Day 1:** This'll be fun.

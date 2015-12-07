@@ -1,4 +1,5 @@
-// Adding the alert function must've interrupted the while loop. Previous attempts timed out and froze browser tabs. #ugh
+// Adding the alert function must've interrupted the while loop.
+// Previous attempts timed out and froze browser tabs. #ugh
 // Thanks https://css-tricks.com/snippets/javascript/javascript-md5/ for the MD5 function
 
 var MD5 = function (string) {

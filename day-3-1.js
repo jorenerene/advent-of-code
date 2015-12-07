@@ -20,3 +20,4 @@ for (var i = 0; i < input.length; i ++) {
 }
 
 console.log (positions.length); // 2565
+alert (positions.length);

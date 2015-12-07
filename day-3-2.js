@@ -33,3 +33,4 @@ for (var i = 0; i < input.length; i ++) {
 }
 
 console.log (positions.length); // 2639
+alert (positions.length);

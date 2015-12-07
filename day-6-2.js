@@ -1,6 +1,5 @@
 var input = document.getElementsByTagName ("pre") [0].textContent.split ("\n");
 
-// var on = [];
 var grid = [];
 var i, n, m, o;
 var coordinates, start, stop;

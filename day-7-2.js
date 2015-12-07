@@ -6,7 +6,7 @@ wires = {
 
 var skip = [];
 
-// find concrete numbers first
+// Find literal values first
 for (var i = 0; i < input.length; i ++) {
   var parameters = input [i].split (" ");
 
@@ -24,7 +24,7 @@ for (var i = 0; i < input.length; i ++) {
 
 var skipped = 0;
 
-// use variables with values until none are undefined
+// Use variables with literal values until none are undefined
 while (skip.length < input.length && skip.length != skipped) {
   skipped = skip.length;
 

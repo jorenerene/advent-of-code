@@ -1,11 +1,9 @@
 var input = document.getElementsByTagName ("pre") [0].textContent.split ("\n");
 
-var sample = "123 -> x\n456 -> y\nx AND y -> d\nx OR y -> e\nx LSHIFT 2 -> f\ny RSHIFT 2 -> g\nNOT x -> h\nNOT y -> i".split ("\n");
-
 var wires = {};
 var skip = [];
 
-// find concrete numbers first
+// Find literal values first
 for (var i = 0; i < input.length; i ++) {
   var parameters = input [i].split (" ");
 
@@ -15,13 +13,9 @@ for (var i = 0; i < input.length; i ++) {
   skip.push (i);
 }
 
-console.log (wires);
-console.log (skip);
-console.log (input.length);
-
 var skipped = 0;
 
-// use variables with values until none are undefined
+// Use variables with literal values until none are undefined
 while (skip.length < input.length && skip.length != skipped) {
   skipped = skip.length;
 
@@ -85,8 +79,6 @@ while (skip.length < input.length && skip.length != skipped) {
       continue;
     }
   }
-
-  console.log (skip.length);
 }
 
 console.log (wires.a);

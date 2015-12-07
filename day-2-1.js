@@ -16,3 +16,4 @@ for (var x = 0; x < input.length; x ++) {
 }
 
 console.log (total); // 1588178
+alert (total);

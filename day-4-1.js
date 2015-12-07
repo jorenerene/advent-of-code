@@ -228,3 +228,4 @@ while (hash.indexOf ("00000") != 0) {
 
 console.log (hash);
 console.log (number); // 117946
+alert (number);

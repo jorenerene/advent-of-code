@@ -11,3 +11,4 @@ My midnight workflow solely requires a browser to refresh the new day's puzzle p
 - Day 4: Alerts can escape timed out tabs.
 - Day 5: 81st!
 - Day 6: Cache large datasets!
+- Day 7: 90th!

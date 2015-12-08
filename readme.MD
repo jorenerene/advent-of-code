@@ -6,7 +6,7 @@ My midnight workflow solely requires a browser to refresh the new day's puzzle p
 
 ## Demo
 
-[![Advent of Code Solution Demo](http://i.imgur.com/jbKuUIO.gif "Advent of Code Solution Demo")](https://youtu.be/NdhpbGZIrVk)
+[![Advent of Code Solution Demo](http://i.imgur.com/4Vjj5lC.gif "Advent of Code Solution Demo")](https://youtu.be/NdhpbGZIrVk)
 
 ## Notes
 

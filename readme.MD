@@ -16,3 +16,4 @@ My midnight workflow solely requires a browser to refresh the new day's puzzle p
 - **Day 5:** 81st!
 - **Day 6:** Cache large datasets!
 - **Day 7:** 90th!
+- **Day 8:** Manipulate escaped literals before JavaScript interprets them. Lost nearly two hours there. What leaderboard?

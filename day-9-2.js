@@ -29,6 +29,7 @@ var total = 100000000000;
 
 var parameters, start, stop, distance;
 
+// Cache destinations, routes, and backward routes (backwards)
 for (var i = 0; i < input.length - 1; i ++) {
   parameters = input [i].split (" ");
   start = parameters [0];
@@ -43,6 +44,7 @@ for (var i = 0; i < input.length - 1; i ++) {
 
 var permutations = permutator (destinations);
 
+// Iterate permutations against cache without repeating destinations
 for (var i = 0; i < permutations.length; i ++) {
 	var permutation = permutations [i];
 
@@ -73,6 +75,7 @@ for (var i = 0; i < permutations.length; i ++) {
 		}
 	}
 
+	// Test and replace largest distance with visited total distance if all destinations have been visited
 	if (visited.length == destinations.length && total > largest) {
 		largest = total;
 

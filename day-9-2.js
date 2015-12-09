@@ -81,4 +81,4 @@ for (var i = 0; i < permutations.length; i ++) {
 }
 
 console.log (largest);
-alert (largest); // 251
+alert (largest); // 898

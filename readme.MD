@@ -19,4 +19,5 @@ My midnight workflow solely requires a browser to refresh the new day's puzzle p
 - **Day 7:** 90th!
 - **Day 8:** Manipulate escaped literals before JavaScript interprets them. Lost nearly two hours there. What leaderboard?
 - **Day 9:** We meet again Permutations. Back to back leaderboard omissions.
-- **Day 10:** ...
+- **Day 10:** First time playing Look and Say.
+- **Day 11:** That awkward moment your algorithm solves the input exorbitantly faster than the examples.

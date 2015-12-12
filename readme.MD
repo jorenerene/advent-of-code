@@ -2,7 +2,7 @@
 
 Thousands of programmers are undertaking the inaugural [Advent of Code](http://adventofcode.com/about); a series of small programming puzzles for a variety of skill levels. These are my puzzle solutions.
 
-My midnight workflow solely requires a browser to refresh the new day's puzzle page (http://adventofcode.com/day/#) and write JavaScript in the developer console.
+My midnight workflow solely requires a browser to write JavaScript in the developer console.
 
 ## Demo
 
@@ -21,4 +21,4 @@ My midnight workflow solely requires a browser to refresh the new day's puzzle p
 - **Day 9:** We meet again Permutations. Back to back leaderboard omissions.
 - **Day 10:** First time playing Look and Say.
 - **Day 11:** That awkward moment your algorithm solves the input exorbitantly faster than the examples.
-- **Day 12:** 91st!
+- **Day 12:** Recursion my old friend. 91st!

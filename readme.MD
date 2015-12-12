@@ -21,3 +21,4 @@ My midnight workflow solely requires a browser to refresh the new day's puzzle p
 - **Day 9:** We meet again Permutations. Back to back leaderboard omissions.
 - **Day 10:** First time playing Look and Say.
 - **Day 11:** That awkward moment your algorithm solves the input exorbitantly faster than the examples.
+- **Day 12:** 91st!

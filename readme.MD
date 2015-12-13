@@ -22,4 +22,4 @@ My midnight workflow solely requires a browser to write JavaScript in the develo
 - **Day 10:** First time playing Look and Say.
 - **Day 11:** That awkward moment your algorithm solves the input exorbitantly faster than the examples.
 - **Day 12:** Recursion my old friend. 91st!
-- **Day 13:** Aldo > McGregor. GCHQ next.
+- **Day 13:** Oh Aldo. GCHQ next.

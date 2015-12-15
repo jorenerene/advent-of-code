@@ -24,3 +24,4 @@ My midnight workflow solely requires a browser to write JavaScript in the develo
 - **Day 12:** Recursion my old friend. 91st!
 - **Day 13:** Oh Aldo. GCHQ next.
 - **Day 14:** More JSON.
+- **Day 15:** Efficiency plummets. Writing the solution was straightforward. Waiting for the numbers to crunch was exhausting. Pretty sure my limitations > JavaScript's limitations.

@@ -43,5 +43,5 @@ for (x in reindeers) {
 }
 
 console.log (reindeers);
-console.log (winner); // 35084 TOO HIGH
-// alert ();
+console.log (winner); // 2640
+alert (winner);

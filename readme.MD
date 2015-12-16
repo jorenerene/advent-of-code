@@ -25,3 +25,4 @@ My midnight workflow solely requires a browser to write JavaScript in the develo
 - **Day 13:** Oh Aldo. GCHQ next.
 - **Day 14:** More JSON.
 - **Day 15:** Efficiency plummets. Writing the solution was straightforward. Waiting for the numbers to crunch was exhausting. Pretty sure my limitations > JavaScript's limitations.
+- **Day 16:** Deciphering the question was the bottleneck. I recorded my entire process. I'll edit and upload the recording and update this readme after a good night's rest.

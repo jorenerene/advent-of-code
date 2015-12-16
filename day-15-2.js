@@ -21,6 +21,7 @@ for (var i = 0; i < input.length - 1; i ++) {
 
 var largest = 0;
 
+// HACK: WOULDN'T INTUITIVELY ADDRESS ADDED DEPTH
 for (var w = 0; w < 101; w ++) {
   console.log (w);
 

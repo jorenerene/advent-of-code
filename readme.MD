@@ -28,3 +28,4 @@ My midnight workflow solely requires a browser to write JavaScript in the develo
 - **Day 14:** Objects everywhere.
 - **Day 15:** Efficiency plummets. Writing the solution was straightforward. Waiting for the numbers to crunch was exhausting. Still, my limitations > JavaScript's limitations. I'll revisit this.
 - **Day 16:** Bottleneck: Deciphering the question. I'll edit and upload my recorded process and update this readme after a good night's rest.
+- **Day 17:** Conditional combinations. I slept a full 8 hours last night and missed the midnight rush. Earnestly took half an hour this morning.

@@ -2,9 +2,9 @@
 
 Thousands of programmers are undertaking the inaugural [Advent of Code](http://adventofcode.com/about); a series of small programming puzzles for a variety of skill levels. These are my puzzle solutions.
 
-My midnight workflow solely requires a browser to write JavaScript in the developer console.
+My midnight workflow solely requires a browser to write JavaScript in the developer console. Watch me [solve Day 16](https://youtu.be/QegR6FVZaXM)!
 
-## Demo
+## Test
 
 [![Advent of Code Day 1 Solution Test Demonstration](http://i.imgur.com/4Vjj5lC.gif "Advent of Code Day 1 Solution Test Demonstration")](https://youtu.be/NdhpbGZIrVk)
 
@@ -27,5 +27,5 @@ My midnight workflow solely requires a browser to write JavaScript in the develo
 - **Day 13:** Oh Aldo. GCHQ next.
 - **Day 14:** Objects everywhere.
 - **Day 15:** Efficiency plummets. Writing the solution was straightforward. Waiting for the numbers to crunch was exhausting. Still, my limitations > JavaScript's limitations. I'll revisit this.
-- **Day 16:** Bottleneck: Deciphering the question. I'll edit and upload my recorded process and update this readme after a good night's rest.
-- **Day 17:** Conditional combinations. I slept a full 8 hours last night and missed the midnight rush. Earnestly took half an hour this morning.
+- **Day 16:** [Watch me solve it!](https://youtu.be/QegR6FVZaXM) I meant to include narration, but the synchronization became too time consuming; I'll narrate live next time.
+- **Day 17:** Conditional combinations. I slept a full 8 hours last night and missed the midnight rush. Earnestly took half an hour this morning. Twenty minutes too long in hindsight. Always in hindsight.

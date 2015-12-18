@@ -65,6 +65,7 @@ function checkLights (condition, row, column) {
   }
 }
 
+// http://james.padolsey.com/javascript/deep-copying-of-objects-and-arrays/
 function deepCopy (obj) {
   if (Object.prototype.toString.call (obj) === '[object Array]') {
     var out = [], i = 0, len = obj.length;

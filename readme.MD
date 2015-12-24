@@ -30,4 +30,4 @@ My midnight workflow solely requires a browser to write JavaScript in the develo
 - **Day 16:** [Watch me solve it!](https://youtu.be/QegR6FVZaXM) I meant to include narration, but the synchronization became too time consuming; I'll narrate live next time.
 - **Day 17:** Conditional combinations. I slept a full 8 hours last night and missed the midnight rush. Earnestly took half an hour this morning. Twenty minutes too long in hindsight. Always in hindsight.
 - **Day 18:** Lesson learned: Differentiate Shallow vs. Deep Copying.
-- **Day 19:** Well damn.
+- **Day 19:** Well damn. Finally deciphered the second puzzle after a nap. Will play catch up on Christmas Eve and write a scathing blog post regarding instructions. Disregard this cheap Github commit.

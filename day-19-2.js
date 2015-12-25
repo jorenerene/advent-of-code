@@ -1,35 +1,3 @@
-var input = document.getElementsByTagName ("pre") [0].textContent.split ("\n");
-// var input = "H => HO\nH => OH\nO => HH\n\nHOH\n".split ("\n");
-// var input = "H => HO\nH => OH\nO => HH\n\nHOHOHO\n".split ("\n");
-var input = "e => H\ne => O\nH => HO\nH => OH\nO => HH\n\nHOH\n".split ("\n");
-var input = "e => H\ne => O\nH => HO\nH => OH\nO => HH\n\nHOHOHO\n".split ("\n");
-
-var replacements = [];
-var starters = [];
-
-// Cache variables
-for (var x = 0; x < input.length && input [x] != ""; x ++) {
-  var variables = input [x].split (" => ");
-
-  var replacement = {
-    from: variables [0],
-    to: variables [1]
-  };
-
-  if (variables [0] == "e") starters.push (replacement);
-  else replacements.push (replacement);
-}
-
-// console.log (replacements);
-// console.log (starters);
-
-// Cache the objective
-var objective = input [input.length - 2];
-
-// console.log (objective);
-
-/* I'm interpreting the following to mean that replacements can only be used once: Given the available replacements */
-
 // http://stackoverflow.com/questions/9960908/permutations-in-javascript
 function permutator (inputArr) {
 	var results = [];
@@ -49,79 +17,84 @@ function permutator (inputArr) {
 	return permute (inputArr);
 }
 
+var input = document.getElementsByTagName ("pre") [0].textContent.split ("\n");
+// var input = "e => H\ne => O\nH => HO\nH => OH\nO => HH\n\nHOH\n".split ("\n"); // 3
+// var input = "e => H\ne => O\nH => HO\nH => OH\nO => HH\n\nHOHOHO\n".split ("\n"); // 6
+
+var replacements = [];
+
+// Cache variables
+for (var x = 0; x < input.length && input [x] != ""; x ++) {
+  var variables = input [x].split (" => ");
+
+  var replacement = {
+    from: variables [0],
+    to: variables [1]
+  };
+
+  replacements.push (replacement);
+}
+
+console.log (replacements);
+
+// Cache the objective
+var objective = input [input.length - 2];
+
+console.log (objective);
+
+var permutations = permutator (replacements);
+
+console.log (permutations);
+
 // http://stackoverflow.com/questions/3410464/how-to-find-all-occurrences-of-one-string-in-another-in-javascript
-function indexes(source, find) {
+function indexes (source, find) {
   var result = [];
   for (i = 0; i < source.length; ++i) {
     // If you want to search case insensitive use
-    // if (source.substring(i, i + find.length).toLowerCase() == find) {
-    if (source.substring(i, i + find.length) == find) {
-      result.push(i);
+    // if (source.substring (i, i + find.length).toLowerCase () == find) {
+    if (source.substring (i, i + find.length) == find) {
+      result.push (i);
     }
   }
   return result;
 }
 
-// http://james.padolsey.com/javascript/deep-copying-of-objects-and-arrays/
-function deepCopy (obj) {
-  if (Object.prototype.toString.call (obj) === '[object Array]') {
-    var out = [], i = 0, len = obj.length;
-
-    for ( ; i < len; i++ ) {
-      out [i] = arguments.callee (obj [i]);
-    }
-
-    return out;
-  }
-
-  if (typeof obj === 'object') {
-    var out = {}, i;
-
-    for (i in obj) {
-      out [i] = arguments.callee (obj [i]);
-    }
-
-    return out;
-  }
-
-  return obj;
+// http://stackoverflow.com/questions/1431094/how-do-i-replace-a-character-at-a-particular-index-in-javascript?rq=1
+String.prototype.replaceAt = function (index, from, to) {
+  return this.substr (0, index) + this.substr (index).replace (from, to);
 }
 
-// fine tune permutator to ignore all entries that don't start with "e"
-var permutations = permutator (replacements);
-
-console.log (permutations);
-
 var least = 90000000000;
+var permutation;
+var steps = 0;
+var result;
 
-var generated = [];
+for (var x = 0; x < permutations.length; x ++) {
+  steps = 0;
+  permutation = permutations [x];
 
-for (var x = 0; x < starters.length; x ++) {
-  for (var y = 0; y < permutations.length; y ++) {
-    var result = starters [x].to;
+  if (permutation [0].from != "e") continue;
+  result = "e";
 
-    var permutation = permutations [y];
+  for (var y = 0; y < permutation.length; y ++) {
+    var possible = indexes (result, permutation [y].from);
 
-    var steps = 1;
+    if (possible.length == 0) break;
 
-    for (var z = 0; z < permutation.length; z ++) {
-      if (result.indexOf (permutation [z].from) == -1) break;
+    possible = possible.reverse ();
 
-      result = result.replace (permutation [z].from, permutation [z].to);
-
+    for (var z = 0; z < possible.length; z ++) {
+      result = result.replaceAt (possible [z], permutation [y].from, permutation [y].to);
       steps ++;
 
-      if (result == objective && steps < least) {
-        least = steps;
-        generated.push (result);
+      if (result == objective) {
+        if (steps < least) least = steps;
         break;
       }
     }
-
-    console.log (result);
-    console.log (steps);
-    console.log (objective);
   }
+
+  console.log ((x + 1) + "/" + permutations.length);
 }
 
 console.log (least);
